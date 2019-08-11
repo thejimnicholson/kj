@@ -40,3 +40,10 @@ kubectl port-forward jenkins-68ddf4f48b-5nkvv 8080:8080
 ## Jenkins agent configuration
 
 + Follow instructions for "jenkins slave setup" in [this article](https://www.blazemeter.com/blog/how-to-setup-scalable-jenkins-on-top-of-a-kubernetes-cluster/), ignore the parts about minikube. The deployment and service files included here are taken from that article. 
+
+## gogs
+
+## mysql 
+
+https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/#deploy-mysql
+
