@@ -17,9 +17,9 @@ spec:
         - name: gogs-port
           containerPort: 3000
         volumeMounts:
-        - mountPath: /data
-          name: data
+        - name: gogs-persistent-storage
+          mountPath: /data
       volumes:
-      - name: data
-        hostPath:
-          path: /users/s003848/gogs/data
+      - name: gogs-persistent-storage
+        persistentVolumeClaim:
+          claimName: gogs-pv-claim

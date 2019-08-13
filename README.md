@@ -47,3 +47,5 @@ kubectl port-forward jenkins-68ddf4f48b-5nkvv 8080:8080
 
 https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/#deploy-mysql
 
+kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
+
